@@ -22,4 +22,7 @@ class Cell {
        // this.parent.checkCell( this.index );
     //}
 
+}
 export default Cell;
+
+

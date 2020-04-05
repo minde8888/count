@@ -11,8 +11,7 @@ class Minesweeper {
 
         //this.clickCount = 0;
         //this.cells = [];
-
-        this.init();
+        
     }
 
     init() {
@@ -21,9 +20,11 @@ class Minesweeper {
     }
 
     validate() {
+        const DOM = document.querySelector(this.target);
         }
 
     render() {
+        
         let HTML = `<div class="header">
                         <div class="calculator">Calculator</div>
                         <div class="standard">Standard</div>
