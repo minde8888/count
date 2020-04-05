@@ -1,16 +1,18 @@
 import Cell from './Cell.js';
 
 class Minesweeper {
-    constructor( target, width, height ) {
+    constructor( target, width, height,  ) {
         this.target = target;
         this.DOM = null;
         this.DOMfield = null;
         this.width = width;
         this.height = height;
+        
+        this.init();
 
 
         //this.clickCount = 0;
-        //this.cells = [];
+        this.cells = [];
         
     }
 
