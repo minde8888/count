@@ -24,8 +24,9 @@ class Minesweeper {
         }
 
     render() {
-        this.DOM = DOM;
+        
        const DOM = document.querySelector(this.target);
+       this.DOM = DOM;
         let HTML = `<div class="header">
                         <div class="calculator">Calculator</div>
                         <div class="standard">Standard</div>
