@@ -3,7 +3,7 @@ import Cell from './Cell.js';
 class Minesweeper {
     constructor( target, width, height ) {
         this.target = target;
-        this.DOM = null;
+        this.DOM = DOM;
         this.DOMfield = null;
         this.width = width;
         this.height = height;
@@ -20,11 +20,11 @@ class Minesweeper {
     }
 
     validate() {
-        const DOM = document.querySelector(this.target);
+        
         }
 
     render() {
-        
+       const DOM = document.querySelector(this.target);
         let HTML = `<div class="header">
                         <div class="calculator">Calculator</div>
                         <div class="standard">Standard</div>
