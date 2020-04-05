@@ -15,12 +15,12 @@ class Cell {
 
         this.DOM = this.parentDOM.querySelector(`#c_${this.index}`);
 
-        //this.DOM.addEventListener( 'click', (e) => this.click(e) );
+        this.DOM.addEventListener( 'click', (e) => this.click(e) );
     }
 
-    //click( _event ) {
-       // this.parent.checkCell( this.index );
-    //}
+    click( _event ) {
+        this.parent.checkCell( this.index );
+    }
 
 }
 export default Cell;

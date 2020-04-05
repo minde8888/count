@@ -7,12 +7,13 @@ class Minesweeper {
         this.DOMfield = null;
         this.width = width;
         this.height = height;
-        
+
+        this.cells = [];
         this.init();
 
 
         //this.clickCount = 0;
-        this.cells = [];
+        
         
     }
 
