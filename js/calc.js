@@ -1,53 +1,31 @@
-import Cell from './Cell.js';
+//import Cell from './Cell.js';
 
-class Minesweeper {
-    constructor( target, width, height,  ) {
+class calculator {
+    constructor( target ) {
         this.target = target;
-        this.DOM = null;
-        this.DOMfield = null;
-        this.width = width;
-        this.height = height;
 
-        this.cells = [];
-        this.init();
-
-
-        //this.clickCount = 0;
+        const calculator = document.querySelector(this.target)
+        const keys = calculator.querySelector('#btn')
         
+
         
-    }
+        keys.addEventListener('click', e => {
+         if (e.target.matches('#btn')) {
+            const key = target.e;
+            const action = key.dataset.action;
+            const keyContent = key.textContent;
+            const displayedNum = display.textContent;
+         }
+         console.log('#btn')
+        })
+        const key = target.e;
+        const action = key.dataset.action;
 
-    init() {
-        this.validate();
-        this.render();
-    }
-
-    validate() {
-        
-        }
-
-    render() {
-        
-       const DOM = document.querySelector(this.target);
-       this.DOM = DOM;
-        let HTML = `<div class="header">
-                        <div class="calculator">Calculator</div>
-                        <div class="standard">Standard</div>
-                        <div class="show">Show</div>
-                        <div class="memory">Memory</div>
-                        
-                    </div>
-                    <div class="field"></div>`;
-        this.DOM.classList.add('minesweeper');
-        this.DOM.innerHTML = HTML;
-        this.DOMfield = this.DOM.querySelector('.field');
-
-        for ( let i=0; i<this.width * this.height; i++ ) {
-            this.cells.push( new Cell(i, this) );
+        if (!action) {
+            console.log('number key!')
         }
     }
 }
+const sent = new calculator('#count');
 
-const game = new Minesweeper('#game', 10, 1);
-
-console.log(game);
+console.log(sent)

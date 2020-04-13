@@ -8,7 +8,26 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 <body>
-    <div id="game"></div>
-    <script src="./js/calc.js" type="module"></script>
+    <div id="count" class="calculator">
+        <div class="calculator__display">0</div>
+        <div id="btn" class="key--operator" data-action="add">+</div>
+        <div id="btn" class="key--operator" data-action="subtract">-</div>
+        <div id="btn" class="key--operator" data-action="multiply">&times;</div>
+        <div id="btn" class="key--operator" data-action="divide">÷</div>
+        <div id="btn">7</div>
+        <div id="btn">8</div>
+        <div id="btn">9</div>
+        <div id="btn">4</div>
+        <div id="btn">5</div>
+        <div id="btn">6</div>
+        <div id="btn">1</div>
+        <div id="btn">2</div>
+        <div id="btn">3</div>
+        <div v>0</div>
+        <div data-action="decimal">.</div>
+        <div data-action="clear">C</div>
+        <div class="key--equal" data-action="calculate">=</div>
+    </div>
+    <script src="./js/calc.js"></script>
 </body>
 </html>

@@ -8,9 +8,10 @@ class Cell {
 
         this.init();
     }
-
+    
+    
     init() {
-        const HTML = `<div id="c_${this.index}" class="cell"></div>`;
+        const HTML = `<div id="c_${this.index}" class="cell">${this.a}</div>`;
         this.parentDOM.insertAdjacentHTML('beforeend', HTML);
 
         this.DOM = this.parentDOM.querySelector(`#c_${this.index}`);
@@ -21,7 +22,7 @@ class Cell {
     click( _event ) {
         this.parent.checkCell( this.index );
     }
-
+    
 }
 export default Cell;
 

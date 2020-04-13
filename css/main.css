@@ -1,5 +1,5 @@
-.minesweeper {
-    display: inline-block;
+body .calculator { 
+    display: grid;
     min-width: 180px;
     width: 322px;
     border: 1px solid #858585;
@@ -9,12 +9,17 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+.minesweeper {
+    display: inline-block;
+
+}
 .minesweeper > .field {
     display: grid;
     grid-template-columns:repeat(3, 100px);
     grid-gap: 1px;
     background-color: #fff;
     color: #444;
+    height: 250px;
 }
     .minesweeper > .field > .cell {
         background-color: #444;
@@ -34,3 +39,9 @@
         background-color: #bbb;
         cursor: pointer;
     }
+    .memory{
+        height: 20px;
+    }
+.show{
+    height: 90px;
+}
