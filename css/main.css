@@ -1,47 +1,32 @@
 body .calculator { 
     display: grid;
-    min-width: 180px;
-    width: 322px;
+    grid-template-columns:repeat(3, 100px);
+    width: 300px;
     border: 1px solid #858585;
     background-color: #eee;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    user-select: none;
 }
-.minesweeper {
-    display: inline-block;
-
+ #btn{
+    background-color: #444;
+    color: #fff;
+    border-radius: 5px;
+    padding: 15px;
+    font-size: 100%;
+    text-align: center;
 }
-.minesweeper > .field {
-    display: grid;
-    grid-template-columns:repeat(3, 100px);
-    grid-gap: 1px;
-    background-color: #fff;
-    color: #444;
-    height: 250px;
+#btn:hover {
+    background-color: #bbb;
+    cursor: pointer;
 }
-    .minesweeper > .field > .cell {
-        background-color: #444;
-        color: #fff;
-        border-radius: 5px;
-        padding: 15px;
-        font-size: 100%;
-
-    }
+/*
     .a {
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
     }
-    .minesweeper > .field > .cell:hover {
-        background-color: #bbb;
-        cursor: pointer;
-    }
-    .memory{
-        height: 20px;
-    }
-.show{
-    height: 90px;
-}
+*/
